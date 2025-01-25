@@ -230,7 +230,7 @@ const submitEditVoteItem = async () => {
     // 調用 updateVoteItem，傳入完整的編輯資料
     await updateVoteItem(editVoteItem.value);
     fetchVoteItems(); // 重新加載列表
-    closeEditModal(); // 關閉模態框
+    closeEditModal(); // 關閉小視窗
   } catch (error) {
     console.error("Error editing vote item:", error);
   }

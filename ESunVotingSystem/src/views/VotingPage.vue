@@ -131,7 +131,6 @@ const submitVote = async () => {
       voteItem: currentItem.value.id,
       voterName: voterName.value,
     };
-    console.log(voteRecord);
 
     // 傳投票資料給後端
     const response = await axiosapi.post("/voteRecord", voteRecord);

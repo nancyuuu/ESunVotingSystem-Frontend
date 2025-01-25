@@ -30,7 +30,7 @@ const goToAdmin = () => {
   }
 
   button {
-    margin: 0 40px; /* 增加按鈕間的間距 */
+    margin: 0 40px; /* 增加按鈕間距 */
     padding: 10px 20px;
     background-color:#03b3ad;
     color: white;
