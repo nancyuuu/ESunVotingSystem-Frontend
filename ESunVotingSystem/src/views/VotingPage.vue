@@ -133,7 +133,7 @@ const submitVote = async () => {
     };
     console.log(voteRecord);
 
-    // 發送投票資料給後端
+    // 傳投票資料給後端
     const response = await axiosapi.post("/voteRecord", voteRecord);
 
     if (response.data.result_type) {
@@ -156,7 +156,7 @@ onMounted(() => {
 
 <style>
 .d-flex {
-  margin-top: 40px; /* 調整這裡的數值，讓表格往下移 */
+  margin-top: 40px; /* 讓表格往下移 */
 }
 
 table th,

@@ -123,7 +123,7 @@
       tabindex="-1"
       role="dialog"
     >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">確認刪除</h5>
@@ -152,7 +152,6 @@
         </div>
       </div>
     </div>
-    <div v-if="isDeleteModalOpen" class="modal-backdrop fade show"></div>
   </div>
 </template>
 
@@ -205,7 +204,7 @@ const submitNewVoteItem = async () => {
   }
 };
 
-// 編輯模態框相關操作
+// 編輯小視窗
 const openEditModal = (item) => {
   isEditModalOpen.value = true;
   editVoteItem.value = { ...item }; // 將要編輯的資料帶入表單
@@ -301,31 +300,9 @@ button {
   z-index: 1050;
 }
 
-.modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1050;
-}
-
 .modal-dialog {
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
-}
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1049;
 }
 </style>
