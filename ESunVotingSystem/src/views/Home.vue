@@ -12,11 +12,11 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const goToVoting = () => {
-  router.push('/voting'); // 假設 '/voting' 是投票介面的路由
+  router.push('/voting'); // 投票介面
 };
 
 const goToAdmin = () => {
-  router.push('/admin'); // 假設 '/admin' 是管理後台的路由
+  router.push('/admin'); // 管理後台
 };
 </script>
 
@@ -26,7 +26,7 @@ const goToAdmin = () => {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh; /* 將高度設為視窗高度，確保內容在垂直方向居中 */
+    height: 100vh; /* 內容在垂直方向居中 */
   }
 
   button {
